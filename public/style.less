@@ -1,0 +1,52 @@
+@main-black: #232323;
+@main-grey: #6e6e6e;
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 100px 100px;
+    place-self: center;
+
+    padding: 100px 250px;
+    border: 1px solid @main-grey;
+    border-radius: 4px;
+    box-shadow: 0 0 black;
+    transition: border-color .5s ease, box-shadow 1s ease, background-color .5s ease;
+
+    &:hover {
+        border-color: @main-grey;
+        background-color: lighten(@main-black, 2%);
+        box-shadow: 10px 10px 3px black;
+
+        mark {
+            color: #eee;
+        }
+    }
+}
+
+mark {
+    font-size: 100px;
+    text-align: center;
+    color: @main-grey;
+    background-color: transparent;
+    transition: color .5s ease;
+}
+
+.main-wrapper {
+    display: grid;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: @main-black;
+
+    span {
+        align-self: flex-end;
+        color: @main-grey;
+    }
+}
