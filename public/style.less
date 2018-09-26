@@ -22,6 +22,12 @@ h1 {
 
 main {
     width: 700px;
+    margin-left: 50px;
+}
+
+aside {
+    width: 300px;
+    margin-left: 100px;
 }
 
 article {
@@ -64,9 +70,13 @@ p {
     transition: color .5s ease;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .flex {
     display: flex;
-    justify-content: space-around;
 }
 
 .article__body {
@@ -74,11 +84,8 @@ p {
 }
 
 .article__index {
-    // position: fixed;
-    // top: 115px;
-    // right: 100px;
-
-    width: 300px;
+    position: sticky;
+    top: 20px;
     padding: 30px;
     border: 1px solid @main-grey;
 
