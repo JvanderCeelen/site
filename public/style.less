@@ -6,8 +6,6 @@
 }
 
 body {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0;
     padding: 30px;
     font-family: 'Sawarabi Mincho', sans-serif;
@@ -16,22 +14,17 @@ body {
 
 h1 {
     width: 100%;
-    margin-bottom: 50px;
+    margin: 15px 0 50px;
     color: @main-grey;
     font-size: 20px;
+    line-height: 1;
 }
 
 main {
-    width: 70%;
-}
-
-aside {
-    width: 30%;
+    width: 700px;
 }
 
 article {
-    width: 700px;
-    margin: 0 auto;
     padding: 50px 80px;
     border: 1px solid @main-grey;
     border-radius: 2px;
@@ -71,11 +64,21 @@ p {
     transition: color .5s ease;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 .article__body {
     margin: 0;
 }
 
 .article__index {
+    // position: fixed;
+    // top: 115px;
+    // right: 100px;
+
+    width: 300px;
     padding: 30px;
     border: 1px solid @main-grey;
 

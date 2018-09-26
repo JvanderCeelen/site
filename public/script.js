@@ -6,19 +6,24 @@ var blog = {
     },
 
     attachHandlers: function() {
-        $('.index').click(function() {
-            blog.scrollToArticle();
-        });
+        $('body').on('click', 'p.index', blog.scrollToArticle);
     },
 
     buildArticleIndex: function() {
-        $('h2').each(function(index, element) {
+        $('h2').each(function(i, element) {
             $('.article__index').append('<p class="index">' + $(element).text() + '</p>');
         });
     },
 
-    scrollToArticle: function() {
-        console.log('click');
+    scrollToArticle: function(event) {
+        $('article h2').each(function(index, element) {
+
+            if (element.innerText === event.target.innerText) {
+                $('html').animate({
+                    scrollTop: element.offsetTop - 70
+                }, 1000);
+            }
+        });
     }
 }
 
