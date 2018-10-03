@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Gidole-Regular';
@@ -13,8 +17,13 @@ body {
 
 main {
     width: 755px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 40px;
+
+    @media(max-width: 768px) {
+        padding: 10px 10px 20px;
+    }
 }
 
 h3 {
@@ -41,6 +50,10 @@ address {
 
 .main__content {
     text-align: right;
+
+    a {
+        color: #408000;
+    }
 }
 
 .main__content__expertise,
