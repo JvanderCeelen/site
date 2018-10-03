@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Walter Goossens">
+        <meta name="description" content="Creatieve Embedded">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creative Embedded</title>
+        <link rel="stylesheet/less" href="/walter/style.less">
+        <script src="less.min.js" type="text/javascript"></script>
+        <!-- <script src="jquery-2.2.2.min.js"></script> -->
+        <!-- <script src="/walter/script.js" type="text/javascript"></script> -->
+    </head>
+    <body>
+        <main>
+            <object type="image/svg+xml" data="/walter/logo_menu.svg" id="menuLogo">Your browser does not support SVGs. Bummer, it's a nice logo.</embed></object>
+            <div class="main-wrapper">
+                <div class="main__contact">
+                    <a href="mailto:waltergoossens@creative-embedded.com">
+                        <img src="/walter/mail_icon.svg" width="25" height="25" title="mail:creativeembedded@gmail.com">
+    				</a>
+                    <a href="https://www.linkedin.com/in/walter-goossens-a7a760139/">
+                        <img src="/walter/linkedin_icon.svg" width="25" height="25" title="LinkedIn profile">
+                    </a>
+                    <a href="tel:+31647691799">
+                        <img src="/walter/phone_icon.svg" width="25" height="25" title="phone: +31647691799">
+                    </a>
+                </div>
+                <div class="main__content">
+                    <div class="main__content__about" id="div5">
+                        <h2>About Creative Embedded</h2>
+                        <p>Creative Embedded is an embedded software/firmware consulting company with a strong focus on Open-Source.
+                        The majority of our projects are using Linux and Yocto/OpenEmbedded often combined with FPGA's for some added
+                        flavour, but also small micro-controllers or 7u servers can be used if that's the platform that makes most sense.</p>
+                        <p>The core of Creative Embedded is me: Walter Goossens, but I have a network of independent developers that can be
+                        brought in if a specific skill is needed or the amount of work to be done is just too much for one man alone.</p>
+                        <p>Before starting Creative Embedded I've been working in the Video Broadcast industry for almost 10 years where we made
+                        24/7 running dedicated video appliances with FPGA's and processors running Linux.</p>
+                        <p>During that time I've learned to love to achieve the impossible in an impossible time-frame but also to create solutions
+                        that make much sense (once they're done) that you are amazed no one has thought of it before, it's the most logical solution!</p>
+                        <p>Crossing the boundary between software and hardware is another point of interest to me. I'm a trained software engineer but
+                        soon got intrigued by the power of HDL and noticed some difficult software problems are easily solved in HDL and the same is true
+                        for complex HDL problems that are a breeze in software. Clever design and knowing what domain best solves a certain problem
+                        is the key to success in more demanding embedded projects.</p>
+                    </div>
+                    <div class="main__content__expertise" id="div6">
+                        <h2>Expertise</h2>
+                        This is a (by no means complete) list of skills/techniques to give an impression of the things we do.
+                        <h3>Programming Languages</h3>
+                        The main languages we prefer to work with/in are C/C++, VHDL, Java, bash-scripting and PHP. We also use obj-c, Python, verilog, tcl,
+                        Assembler (various archs), Perl, basic and many other languages if the job requires it.
+                        <h3>Processors/architectures</h3>
+                        Listing a bunch of processors architectures and mark them "skills" makes little sense, but instead we'll list some of the architectures
+                        we have hands-on experience with.<BR>
+                        From the ARM-family: iMX6/7 families, Xilinx Zynq/ZynqMP, Intel SoCFpga, STM32, SmartFusion, Raspberry Pi, XScale etc... From the
+                        PowerPC familiy: Freescale 85xx, Apple G4. Various systems from the x86/x86_64 family (mostly as backend servers for embedded tagets).
+                        Various softcores but mostly Nios2 and to a lesser extend MicroBlaze/PicoBlaze, RISC-V and OpenRISC.
+                        <h3>Operating Systems</h3>
+                        Most work is done on Linux, both developing with, developing on and developing for. We've also used ChibiOS and FreeRTOS for smaller
+                        footprint projects. Some work is done on OS-X and Haiku-OS. When being both forced and overpaid we also use Windows.
+                    </div>
+                    <div class="main__content__services" id="div7">
+                        <h2>Services</h2>
+                        There are a number of ways we can help with your project:
+                        <h3>System design assistence</h3>
+                        When projects are in the early phase of development/specification it is best to take the time to really look into the design and make
+                        sure each problem is solved in the correct domain. In the embedded world you really need to know harware in order to do proper software
+                        design, and the same goes for knowing software when designing hardware.
+                        <h3>Development in our own lab</h3>
+                        The preferred way of working is that we develop the stuff you need in our own facility and share the results over GitHub/GitLab/etc.
+                        We can also just send an unnumbered zip file with some magic binaries if that suits your workfow better.
+                        <h3>Development on-site</h3>
+                        We can also come in-house to help develop your project if that's needed or do a combination of both on-site development and development
+                        from at our own lab.
+                        <h3>Training</h3>
+                        We can supply training tailored to your specific use case or give a general introduction to various embedded subjects.
+                        <h3>Other ways we can help</h3>
+                        There are various other ways we can help you and if you think of one not listed here, do not hesitate to contact us!
+                    </div>
+                    <div class="main__content__contact" id="div8">
+                        <h2>Contact</h2>
+                        <address>
+                            Creative Embedded<br />
+                            Debussylaan 2<br />
+                            5049 AC Tilburg<br />
+                            The Netherlands<br />
+                        </address>
+                        KvK: 68413823
+                        tel: <a href="tel:+31647691799">+31647691799</a><br />
+                        mail: <a href="mailto:waltergoossens@creative-embedded.com">waltergoossens@creative-embedded.com</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+    	function divDisplay(dName,val)
+    	{
+    		var d = document.getElementById(dName);
+    		d.style.display = val;
+    	}
+    	function selectOneDiv(dName)
+    	{
+    		divDisplay("div5", "none");
+    		divDisplay("div6", "none");
+    		divDisplay("div7", "none");
+    		divDisplay("div8", "none");
+    		divDisplay(dName,  "block");
+    	}
+    </script>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="312.5"
+   height="312.5"
+   viewBox="0 0 312.5 312.5"
+   enable-background="new 0 0 512 512"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="mail_icon.svg"><metadata
+     id="metadata9"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs7" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     id="namedview5"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="156.25"
+     inkscape:cy="156.25"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" /><path
+     id="email-9-icon"
+     d="M 156.25,0 C 69.95525,0 0,69.95525 0,156.25 0,242.54475 69.95525,312.5 156.25,312.5 242.54475,312.5 312.5,242.54475 312.5,156.25 312.5,69.95525 242.54475,0 156.25,0 Z m 94.02002,86.80522 -93.25773,71.52382 -93.10907,-71.52382 186.3668,0 z m -187.01228,19.59041 54.85968,42.14123 -54.85968,54.85968 0,-97.00091 z m 0.2283,119.29839 67.3703,-67.37029 26.14836,20.08495 26.10589,-20.02124 67.30734,67.30582 -186.93189,0 z m 187.27246,-22.18446 -54.89988,-54.89988 54.89988,-42.10483 0,97.00471 z"
+     inkscape:connector-curvature="0" /></svg>
