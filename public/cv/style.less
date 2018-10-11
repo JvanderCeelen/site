@@ -5,16 +5,27 @@
 body {
     margin: 0;
     padding: 30px;
-    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+}
+
+p {
+    margin-top: 6px;
 }
 
 .cv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px auto 200px;
+    grid-template-rows: auto auto 200px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 
     width: 1000px;
-    height: 1000px;
     margin: 40px auto;
     padding: 40px;
     border: 1px solid lighten(grey, 25%);
@@ -26,9 +37,31 @@ header {
     grid-column-end: 5;
 }
 
+.story-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.story {
+    width: 30%;
+}
+
 aside {
     grid-column-start: 1;
     grid-column-end: 2;
+
+    dt {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+}
+
+address {
+    font-style: normal;
 }
 
 main {
@@ -36,11 +69,47 @@ main {
     grid-column-end: 5;
 }
 
+.item {
+    display: flex;
+
+    ~ .item {
+        margin-top: 10px;
+    }
+
+    .item__content {
+
+        h4 {
+            margin-bottom: 6px;
+        }
+    }
+}
+
+.item__timeline {
+    flex-shrink: 0;
+    width: 140px;
+}
+
 footer {
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
-fieldset ~ fieldset {
-    margin-top: 30px;
+fieldset {
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid lighten(grey, 30%);
+
+    ~ fieldset {
+        margin-top: 30px;
+    }
+}
+
+legend {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.skills-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
