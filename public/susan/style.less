@@ -8,8 +8,8 @@ body {
 
 .content-wrapper {
     width: 1200px;
-    margin: 30px auto;
-    padding: 30px;
+    margin: 40px auto;
+    padding: 40px;
     text-align: center;
     border: 1px solid #d9d9d9;
     border-radius: 2px;
@@ -49,11 +49,53 @@ main {
 
 .category {
     padding: 20px;
-    border: 1px solid #d9d9d9;
-    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+
+    border-image-source: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox=%220 0 80 80%22%3E%3Crect x=%224%22 y=%224%22 width=%2272%22 height=%2272%22 fill=%22transparent%22 stroke=%22%23d9d9d9%22 stroke-width=%221%22 %2F%3E%3C%2Fsvg%3E");
+    border-image-slice: 50%;
+    border-image-width: 32px;
+
+    &:hover {
+
+        figcaption {
+            opacity: 1;
+            transition: opacity 1s ease;
+        }
+    }
+
+    a {
+        display: block;
+    }
+
+    figure {
+        position: relative;
+        margin: 0;
+    }
 
     img {
+        display: block;
         width: 100%;
-        border-radius: 4px;
     }
+
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        color: #fff;
+        background-color: rgba(33, 33, 33, 0.6);
+        opacity: 0;
+
+        transition: opacity 1s ease;
+    }
+}
+
+footer {
+    padding: 20px 120px;
+}
+
+.footer-content {
+    padding: 30px;
+    border-top: 1px solid #d9d9d9;
 }
