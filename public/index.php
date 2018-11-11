@@ -7,10 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gedachtenspinsels | Jonathan van der Ceelen</title>
         <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
-        <link rel="stylesheet/less" href="style.less">
-        <script src="less.min.js" type="text/javascript"></script>
-        <script src="jquery-2.2.2.min.js"></script>
-        <script src="script.js" type="text/javascript"></script>
+        <link rel="stylesheet/less" href="style/style.less">
+        <script type="text/javascript" src="script/less.min.js"></script>
+        <script type="text/javascript" src="script/jquery-2.2.2.min.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
     </head>
     <body>
         <div class="container">
