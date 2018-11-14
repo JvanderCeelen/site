@@ -7,29 +7,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mijn CV | Jonathan van der Ceelen</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="/cv/style.less" rel="stylesheet/less">
-        <script src="/less.min.js" type="text/javascript"></script>
+        <link href="style.less" rel="stylesheet/less">
+        <script src="../script/less.min.js" type="text/javascript"></script>
+        <script src="../script/jquery-2.2.2.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="cv">
+            <div class="language">
+                <a data-language="engels" class="language__country">
+                    <img src="engels.png" alt="Engels" />
+                </a>
+                <a data-language="nederlands" class="language__country">
+                    <img src="nederlands.png" alt="Nederlands" />
+                </a>
+            </div>
             <header>
                 <div class="header--top">
                     <span class="heading">
                         <h1>CV - Jonathan van der Ceelen</h1>
                         <span class="sub-heading">Frontend developer</span>
                     </span>
-                    <img width="120" src="me.jpg" alt="Jonathan">
+                    <img width="120" src="me.jpg" alt="Jonathan" />
                 </div>
                 <div class="story-wrapper">
-                    <div class="story story--youth">
+                    <div class="story story--youth language--nederlands">
                         <h3>Jeugd</h3>
                         <p>Mijn verhaal begint in Tilburg, waar ik opgroeide en tot mijn 22e woonde. Ik heb in Tilburg de Vrije Basisschool doorlopen en ben daarna overgestapt op een reguliere middelbare school, waarbij ik het profiel Natuur en Gezondheid combineerde met het gymnasium. Met name de oude verhalen en mythes vond ik erg interessant.</p>
                     </div>
-                    <div class="story story--college">
+                    <div class="story story--college language--nederlands">
                         <h3>Studie</h3>
                         <p>Op mijn 22e ben ik gaan studeren in Amsterdam: Oudheidkunde. Ik ging achter mijn interesse voor oude verhalen en mythes aan. Ik heb acht jaar gestudeerd, vijf jaar bachelor, drie jaar master. Uiteindelijk studeerde ik in de zomer van 2013 af op het Gilgamesh Epos - een van de oudste geschreven verhalen ter wereld - en kon het echte leven beginnen.
                     </div>
-                    <div class="story story--work">
+                    <div class="story story--work language--nederlands">
                         <h3>Werk</h3>
                         <p>Na acht jaar van theorie, voelde ik dat het tijd was om praktisch bezig te zijn. Daarnaast wilde ik mijn creativiteit kwijt kunnen. Ik koos voor development en na een jaar van online cursussen volgen en solliciteren werd ik door een kleine startup opgepikt. Hier startte mijn carriere als web developer.</p>
                     </div>
@@ -178,7 +187,7 @@
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section class="language--nederlands">
                     <h3>Persoonlijk</h3>
                     <p>In de zomer van 2013 kreeg ik een paniekaanval. Dit leidde ertoe dat ik me ging verdiepen in mijn persoonlijke en spirituele ontwikkeling. Ik volgde een mindfulness cursus en begon met het lezen van zelfhulpliteratuur. Daarnaast begon ik met mediteren en doe dit nog steeds dagelijks. Ik sport op onregelmatige basis - als ik er zin in heb, een à twee keer per week (voetbal, hardlopen, wielrennen, klimmen, tafeltenissen, bootcampen). Daarnaast game ik, voornamelijk rpg's, en wandel ik veel.</p>
                 </section>
@@ -201,7 +210,7 @@
                         <div class="item__timeline">
                             2014 - 2015
                         </div>
-                        <div class="item__content">
+                        <div class="item__content language--nederlands">
                             <h3>Web developer</h3>
                             <strong>TruQu</strong>
                             <p>TruQu maakt review software om professionals te beoordelen. TruQu was mijn eerste baan als Web Developer. Voordat ik begon had ik een basale kennis van Html, Css, Javascript, Python en Java. Bij TruQu heb ik deze kennis uitgebreid en nieuwe talen / frameworks geleerd zoals Erlang, Elm, Django en Bootstrap. Het leukst aan mijn tijd bij TruQu vond ik vanaf de grond opbouwen van webpagina's. Als je een blanco pagina voor je hebt is alles nog mogelijk, het creatieve proces kan beginnen en het is aan jou om alles zo mooi en goed mogelijk op te bouwen.</p>
@@ -211,7 +220,7 @@
                         <div class="item__timeline">
                             2015 - huidig
                         </div>
-                        <div class="item__content">
+                        <div class="item__content language--nederlands">
                             <h3>Frontend web developer</h3>
                             <strong>DGN Publishers</strong>
                             <p>DGN beheert een drietal websites waar financiële producten worden aangeboden. Hier leerde ik echte Css schrijven (in tegenstelling tot Bootstrap), jQuery gebruiken en PHP lezen (in mindere mate ook schrijven). Ik ontwikkelde me tot een echte frontend developer met alles wat daarbij komt kijken: Less, Sass, Npm, Webpack, Vanilla Javascript, het manipuleren van afbeeldingen, omgaan met svg's, responsiveness, Oocss, Bem, het Mvc-model en designs uitlezen. Ik breidde mijn kennis uit van Git, Mysql en Html5 en leerde structuur aan te brengen in de frontend code, zodat het goed onderhouden kan worden.</p>
@@ -221,7 +230,7 @@
                         <div class="item__timeline">
                              Toekomst
                         </div>
-                        <div class="item__content">
+                        <div class="item__content language--nederlands">
                             <h3>Frontend / UX / Designer</h3>
                             <p>Voor mij is het <em>creatieve proces</em> erg belangrijk. Het creëren van <em>iets uit niets</em> geeft me energie. Daarnaast is voor mij het <em>esthetische aspect</em> belangrijk. Ik wil websites maken die <em>origineel</em> zijn, er tussenuit springen en <em>mooi</em> zijn om naar te kijken. In de toekomst wil ik me daarom verder ontwikkelen op het gebied van design. Ook vind ik het belangrijk dat een pagina <em>natuurlijk</em> aanvoelt, prettig is om te gebruiken en logisch is opgebouwd voor de gebruiker. Ook op dit gebied zou ik me verder willen ontwikkelen. Ik wil graag met nieuwe css technieken werken zoals Flexbox en Grid en zorgen voor een vloeiende overgang tussen mobiele en desktop ervaring.</p>
                         </div>
@@ -233,7 +242,7 @@
                         <div class="item__timeline">
                             1997 - 2003
                         </div>
-                        <div class="item__content">
+                        <div class="item__content language--nederlands">
                             <h3>VWO</h3>
                             <strong>Sint Odulphus Lyceum</strong>
                             <p>Op de middelbare school heb ik vwo gedaan, met het vakkenpakket natuur & gezondheid en de specialisatie gymnasium waarbij ik oud-Grieks leerde en veel las over oude mythologische verhalen. Door het lezen van een historische roman over Hannibal de Grote werd mijn interesse voor oude geschiedenis gewekt.</p>
@@ -243,7 +252,7 @@
                         <div class="item__timeline">
                             2005 - 2010
                         </div>
-                        <div class="item__content">
+                        <div class="item__content language--nederlands">
                             <h3>Bachelor Oudheidkunde</h3>
                             <strong>VU Amsterdam</strong>
                             <p>Na een tussenjaar en een valse start in Utrecht met de studie Cognitieve Kunstmatige Intelligentie, melde ik me aan voor de studie Oudheidkunde in Amsterdam. Ik ging mijn interesse voor de mooie verhalen achterna en stortte me op de oude geschiedenis. Oudheidkunde is het bijeen brengen van oude bronnen, voornamelijk geschriften (Grieks, Latijn, Spijkerschrift) en archeologische vondsten. Op deze bronnen laat je theoriëen uit tal van disciplines los: filologie, sociologie, antropologie, economie, filosofie, natuurkunde, enz. om een zo genuanceerd mogelijk beeld van het verleden te creëren.</p>
@@ -253,14 +262,54 @@
                         <div class="item__timeline">
                             2010 - 2013
                         </div>
-                        <div class="item__content">
+                        <div class="item__content language--nederlands">
                             <h3>Master Oudheidstudies</h3>
                             <strong>VU Amsterdam</strong>
                             <p>Tijdens mijn master specialiseerde ik me in het spijkerschrift van een beschaving die in het tweede milennium voor Christus in Anatolië (grofweg wat nu Turkije is) leefde. Voor mijn scriptie vertaalde ik de Hettitische versie van het Gilgamesh Epos en vergeleek dit met de veel bekendere Babylonische versie. Het schrijven van mijn masterscriptie is tot op heden het project waar ik het meest trots op ben. Met name het laatste halfjaar heb ik hier iedere werkdag acht uur per dag aan gewerkt. Ik heb voor mezelf bewezen dat ik gedisciplineerd ben, doorzettingsvermogen heb en een groot project tot een goed einde kan brengen.</p>
+                        </div>
+                        <div class="language--engels">
+                            test
                         </div>
                     </div>
                 </fieldset>
             </main>
         </div>
     </body>
+    <script>
+        var cv = {
+            init: function() {
+                cv.attachHandlers();
+            },
+
+            attachHandlers: function() {
+                $('.language__country').click(cv.handleLanuageClick);
+            },
+
+            handleLanuageClick: function(event) {
+                var language = $(event.target).parents('.language__country').data('language');
+
+                if (language === 'engels') {
+                    $('.language--nederlands').each(function(index, element) {
+                        $(element).hide();
+                    });
+
+                    $('.language--engels').each(function(index, element) {
+                        $(element).show();
+                    });
+                } else if (language === 'nederlands') {
+                    $('.language--engels').each(function(index, element) {
+                        $(element).hide();
+                    });
+
+                    $('.language--nederlands').each(function(index, element) {
+                        $(element).show();
+                    });
+                }
+            }
+        }
+
+        $(document).ready(function(){
+            cv.init();
+        });
+    </script>
 </html>
