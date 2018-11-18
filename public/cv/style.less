@@ -171,14 +171,22 @@ legend {
     padding-left: 15px;
     list-style: none;
 
-    li ~ li {
-        margin-top: 8px;
+    > li {
+        display: flex;
+
+        ~ li {
+            margin-top: 8px;
+        }
     }
 }
 
 .rating-wrapper {
     display: flex;
     margin-top: 4px;
+}
+
+.rating__title {
+    width: 100px;
 }
 
 .rating__plus {
@@ -198,8 +206,17 @@ legend {
         margin-left: 2px;
     }
 
+    &.rating__plus--half {
+        background-image:
+          linear-gradient(
+            to right,
+            #017201 50%,
+            #aaa 50%
+          );
+    }
+
     &.rating__plus--grey {
-        filter: grayscale(100%);
+        background-color: #aaa;
     }
 }
 
@@ -208,6 +225,7 @@ legend {
     top: -40px;
     right: 0;
     display: flex;
+    display: none;
 }
 
 .language__country {
