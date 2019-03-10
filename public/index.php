@@ -27,6 +27,17 @@
                                 <br /><br />
                                 Ik knik, "Vanavond pas, Angst, vanavond pas".
                             </p>
+                            <p class="article__footnote">
+                                <a class="reaction">Lees hier de reactie van Gudrun Yildiz</a>
+                            </p>
+                            <div class="article__reaction">
+                                <h3>Liefde - Gudrun Yildiz</h3>
+                                <p>
+                                    Ze gluurde naar binnen door de brievenbus, de liefde. En ik zei: "Welkom! Kom binnen." Enthousiast deed ik de deur open om haar te verwelkomen. De liefde stapte bedeesd achteruit. "Kom toch binnen," zei ik. "Je bent welkom. Wil je even zitten? Ik heb een heerlijke zachte bank. Lust je een kopje thee? Lekkere koekjes erbij?" Maar de liefde was om het hoekje weggekropen. Even wilde ik haar achterna gaan, maar ik bedacht me. "Als je straks nog wil komen mag dat hoor. Kom gerust later nog langs." En ik wachtte. De liefde kwam niet tevoorschijn. Ik ging zitten op mijn heerlijk zachte bank en wachtte af.<br />
+                                    's Avonds dacht ik nog veel aan haar en keek of ik haar buiten zag. Maar ze liet zich niet meer zien. Uiteindelijk ben ik maar gaan slapen. <br />
+                                    De volgende dag rekte ik me lang uit bij het wakker worden. Ik liep naar het raam en deed de gordijnen open. Licht viel binnen en daar zweefde de liefde over mij heen. Ze dook recht in mijn hart en ik zei: "Ik ben blij dat je er bent."
+                                </p>
+                            </div>
                         </section>
                     </article>
 
@@ -59,4 +70,27 @@
             </div>
         </div>
     </body>
+    <script>
+    $(document).ready(function() {
+
+        var blog = {
+
+            init: function() {
+                blog.attachHandlers();
+            },
+
+            attachHandlers: function() {
+                $('.reaction').click(blog.showReaction);
+            },
+
+            showReaction: function(event) {
+                $(event.target).hide();
+                var reaction = $(event.target).parents('.article__body').find('.article__reaction');
+                $(reaction).slideDown(1000);
+            }
+        }
+
+        blog.init();
+    });
+    </script>
 </html>
