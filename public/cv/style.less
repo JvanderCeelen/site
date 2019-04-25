@@ -132,11 +132,18 @@ header {
 
     @media(max-width: 768px) {
         width: auto;
+
+        ~ .story {
+            margin-top: 25px;
+        }
     }
 }
 
-.story--work {
-    border-bottom: 1px solid #ddd;
+@media(max-width: 768px) {
+
+    .story--work {
+        border-bottom: 1px solid #ddd;
+    }
 }
 
 aside {
@@ -191,6 +198,7 @@ address {
     .section--personal {
 
         p {
+            margin-bottom: 0;
             padding-bottom: 15px;
             border-bottom: 1px solid #ddd;
         }
@@ -212,6 +220,7 @@ main {
     }
 
     @media(max-width: 768px) {
+        margin-bottom: 20px;
         padding: 0 20px;
     }
 }
@@ -228,6 +237,10 @@ fieldset {
 
     ~ fieldset {
         margin-top: 30px;
+
+        @media(max-width: 768px) {
+            margin-top: 0;
+        }
     }
 }
 
@@ -236,7 +249,8 @@ legend {
     font-weight: bold;
 
     @media(max-width: 768px) {
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 15px;
         padding: 0;
         font-size: 14px;
     }
@@ -250,7 +264,7 @@ legend {
     }
 
     ~ .item {
-        margin-top: 10px;
+        margin-top: 25px;
     }
 }
 
@@ -288,7 +302,8 @@ legend {
     width: 140px;
 }
 
-.job-info {
+.job-info,
+.study-info {
     margin: 0 0 10px;
     padding: 0;
     list-style: none;
@@ -387,6 +402,10 @@ legend {
 
     .hide-mobile {
         display: none !important;
+    }
+
+    .item--last {
+        border-bottom: 1px solid #ddd;
     }
 }
 
